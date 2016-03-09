@@ -1,10 +1,9 @@
-IMAGE = antik486/centos71
+IMAGE = bekberov/docker_erlang_centos7
 TAG   = latest
 
 build:
-        @docker build  --no-cache -t bekberov/docker_erlang_centos7 .
-        @docker run --rm -v $(CURDIR):/data -v $$HOME/node_cache:/cache leanlabs/npm-builder npm install
-
+        @docker build  --no-cache -t $(IMAGE) .
+#        @docker run -v erlang/app:/etc/app -i bekberov/docker_erlang_centos7
 
 release:
 #       @docker build -t $(IMAGE) .
