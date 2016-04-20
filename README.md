@@ -3,7 +3,7 @@ Erlang service
 
 ##Before test image create DIR /DATA on your host and then run cantainer:##
 
-mkdir /DATA   (this is a directory where your located erlang project)
+mkdir /DATA   (this is a directory where located your erlang project)
 
 docker run -it -v /DATA:/opt/app bekberov/docker_erlang_centos7 /bin/bash
 
